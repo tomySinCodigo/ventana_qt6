@@ -13,16 +13,12 @@ QPushButton#bt_fw{
 QPushButton#bt_min{
     image: url(ventana_q6/iconos/miz.ico);
 }
-QPushButton#bt_lock{
+QPushButton#bt_lock:!checked{
+    image: url(ventana_q6/iconos/unlock.ico);
+}
+QPushButton#bt_lock:checked{
     image: url(ventana_q6/iconos/lock.ico);
 }
-QPushButton#bt_o{
-    image: url(ventana_q6/iconos/arrow_i.ico);
-}
-QPushButton#bt_menu{
-    image: url(ventana_q6/iconos/menu.ico);
-}
-
 QPushButton#bt_x,#bt_fw,#bt_min,#bt_lock,#bt_o,#bt_menu{
     background-color:#303026;
     border: 1px solid #303026;
@@ -33,7 +29,14 @@ QPushButton#bt_fw:hover,
     background-color:#3f4a60;
     border: 1px solid #101010;
 }
+QPushButton#bt_o:checked{
+    image: url(ventana_q6/iconos/arrow_d.ico);
+}
+QPushButton#bt_o:!checked{
+    image: url(ventana_q6/iconos/arrow_i.ico);
+}  
 QPushButton#bt_menu{
+    image: url(ventana_q6/iconos/menu.ico);
     font-family:Consolas;
     font-size:12px;
     font-weight:bold;
