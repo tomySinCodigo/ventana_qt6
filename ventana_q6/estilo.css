@@ -1,0 +1,43 @@
+QFrame, QWidget{
+    background-color: #303026;
+}
+QPushButton#bt_x{
+    image: url(ventana_q6/iconos/close.ico);
+}
+QPushButton#bt_x:hover{
+    background-color: #eb5050;
+}
+QPushButton#bt_fw{
+    image: url(ventana_q6/iconos/quad.ico);
+}
+QPushButton#bt_min{
+    image: url(ventana_q6/iconos/miz.ico);
+}
+QPushButton#bt_lock{
+    image: url(ventana_q6/iconos/lock.ico);
+}
+QPushButton#bt_o{
+    image: url(ventana_q6/iconos/arrow_i.ico);
+}
+QPushButton#bt_menu{
+    image: url(ventana_q6/iconos/menu.ico);
+}
+
+QPushButton#bt_x,#bt_fw,#bt_min,#bt_lock,#bt_o,#bt_menu{
+    background-color:#303026;
+    border: 1px solid #303026;
+    border-radius:3px;
+}
+QPushButton#bt_fw:hover,
+#bt_min:hover,#bt_lock:hover,#bt_o:hover,#bt_menu:hover{
+    background-color:#3f4a60;
+    border: 1px solid #101010;
+}
+QPushButton#bt_menu{
+    font-family:Consolas;
+    font-size:12px;
+    font-weight:bold;
+}
+QPushButton#bt_menu::pressed{
+    background-color:#000000;
+}
