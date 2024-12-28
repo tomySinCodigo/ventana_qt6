@@ -69,8 +69,6 @@ class Ui_Skin(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.te_editor.sizePolicy().hasHeightForWidth())
         self.te_editor.setSizePolicy(sizePolicy)
-        self.te_editor.setStyleSheet("background-color: none;\n"
-"")
         self.te_editor.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
         self.te_editor.setFrameShadow(QtWidgets.QFrame.Shadow.Plain)
         self.te_editor.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
@@ -116,6 +114,7 @@ class Ui_Skin(object):
         self.bt_fw.setMinimumSize(QtCore.QSize(20, 18))
         self.bt_fw.setMaximumSize(QtCore.QSize(20, 18))
         self.bt_fw.setText("")
+        self.bt_fw.setCheckable(True)
         self.bt_fw.setObjectName("bt_fw")
         self.hly_bts.addWidget(self.bt_fw)
         self.bt_x = QtWidgets.QPushButton(parent=self.fm_bts)

@@ -7,8 +7,11 @@ QPushButton#bt_x{
 QPushButton#bt_x:hover{
     background-color: #eb5050;
 }
-QPushButton#bt_fw{
-    image: url(ventana_q6/iconos/quad.ico);
+QPushButton#bt_fw:checked{
+    image: url(ventana_q6/iconos/vcuadro.ico);
+}
+QPushButton#bt_fw:!checked{
+    image: url(ventana_q6/iconos/vfull.ico);
 }
 QPushButton#bt_min{
     image: url(ventana_q6/iconos/miz.ico);
@@ -36,11 +39,22 @@ QPushButton#bt_o:!checked{
     image: url(ventana_q6/iconos/arrow_i.ico);
 }  
 QPushButton#bt_menu{
-    image: url(ventana_q6/iconos/menu.ico);
+    /* image: url(ventana_q6/iconos/menu.ico); */
     font-family:Consolas;
     font-size:12px;
     font-weight:bold;
 }
 QPushButton#bt_menu::pressed{
     background-color:#000000;
+}
+QPushButton::menu-indicator{
+    image: url(ventana_q6/iconos/menu.ico);
+}
+QMenu{
+    color: rgb(186, 193, 200);
+    background-color: #2c2d30;
+}
+QMenu:item:selected{
+    background-color: #000000;
+    color: #4cc9f6;
 }

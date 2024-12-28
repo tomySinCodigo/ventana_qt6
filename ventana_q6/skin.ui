@@ -154,10 +154,6 @@
                     <verstretch>0</verstretch>
                    </sizepolicy>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color: none;
-</string>
-                  </property>
                   <property name="frameShape">
                    <enum>QFrame::NoFrame</enum>
                   </property>
@@ -304,6 +300,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                   </property>
                   <property name="text">
                    <string/>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
