@@ -63,19 +63,6 @@ class Ui_Skin(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.hly_otros = QtWidgets.QHBoxLayout()
         self.hly_otros.setObjectName("hly_otros")
-        self.te_editor = QtWidgets.QTextEdit(parent=self.fm_otros)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Policy.Ignored, QtWidgets.QSizePolicy.Policy.Expanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.te_editor.sizePolicy().hasHeightForWidth())
-        self.te_editor.setSizePolicy(sizePolicy)
-        self.te_editor.setFrameShape(QtWidgets.QFrame.Shape.NoFrame)
-        self.te_editor.setFrameShadow(QtWidgets.QFrame.Shadow.Plain)
-        self.te_editor.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.te_editor.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
-        self.te_editor.setTextInteractionFlags(QtCore.Qt.TextInteractionFlag.NoTextInteraction)
-        self.te_editor.setObjectName("te_editor")
-        self.hly_otros.addWidget(self.te_editor)
         self.horizontalLayout.addLayout(self.hly_otros)
         self.hly_barra.addWidget(self.fm_otros)
         self.fm_bts = QtWidgets.QFrame(parent=self.fm_barra)
@@ -150,11 +137,3 @@ class Ui_Skin(object):
     def retranslateUi(self, Skin):
         _translate = QtCore.QCoreApplication.translate
         Skin.setWindowTitle(_translate("Skin", "MainWindow"))
-        self.te_editor.setHtml(_translate("Skin", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Segoe UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))

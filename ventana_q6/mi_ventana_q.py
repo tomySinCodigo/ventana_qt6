@@ -47,6 +47,7 @@ class MiVentanaQ(QMainWindow, Ui_Skin):
         self.bt_min.clicked.connect(self.showMinimized)
         self.bt_lock.clicked.connect(self.fijar)
         self.bt_o.clicked.connect(self.alineaLateral)
+        self.TAGS = []
 
     def aplica_estilo(self):
         with open("ventana_q6/estilo.css", "r", encoding="utf-8") as txt:
@@ -148,3 +149,24 @@ class MiVentanaQ(QMainWindow, Ui_Skin):
             pos = e.pos() - self.vpos
             self.move(self.pos() + pos)
     # para mover la ventana
+    def asignaTitulo(self, texto:str):
+        self.lb_titulo.setText(texto)
+
+    # def mitag(self, texto):
+    #     txt = f'<html><head/><body><p align="right"><span style=" font-size:7pt; font-weight:700; color:#ffffff; background-color:#0000ff;"> {texto} </span></p></body></html>'
+    #     self.te_editor.setHtml(txt)
+
+    def agregaTag(self, texto, bg:str='orange', fg:str='white'):
+        lb = QLabel(self)
+        lb.setText(texto)
+        s = 'font-size:7pt;'\
+        'font-weight:700;'\
+        f'color:{fg};'\
+        f'background-color:{bg};'
+
+        lb.setStyleSheet(s)
+        lb.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        lb.setMargin(4)
+        lb.setFixedHeight(16)
+        self.TAGS.append(lb)
+        self.hly_otros.addWidget(lb)

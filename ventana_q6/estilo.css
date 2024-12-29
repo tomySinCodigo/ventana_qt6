@@ -58,3 +58,9 @@ QMenu:item:selected{
     background-color: #000000;
     color: #4cc9f6;
 }
+QLabel#lb_titulo{
+    color:antiquewhite;
+    font-family:Consolas;
+    font-size:12px;
+    font-weight:bold;
+}

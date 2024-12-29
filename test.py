@@ -9,5 +9,10 @@ if __name__ == '__main__':
     app.setAttribute(Qt.ApplicationAttribute.AA_Use96Dpi)
     app.setStyle("Fusion")
     vn = MiVentanaQ()
+    vn.asignaTitulo("PROGRAMA")
+    vn.agregaTag("AUDIO", bg='red')
+    vn.agregaTag("VIDEO", bg='green')
+    # vn.fm_barra.setFixedHeight(16)
+
     vn.show()
     sys.exit(app.exec())
